@@ -1,0 +1,94 @@
+/* line 6, ../scss/base.scss */
+.active, body header nav ul li a.active {
+  background-color: #1E8184;
+  text-decoration: none;
+  border-bottom-color: #333;
+  color: white;
+}
+
+/* line 12, ../scss/base.scss */
+.inverse-active {
+  color: #1E8184;
+  text-transform: lowercase;
+  border-bottom: 2px solid white;
+}
+
+/* line 18, ../scss/base.scss */
+.hover, a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom-color: white;
+}
+
+/* line 24, ../scss/base.scss */
+a {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 34, ../scss/base.scss */
+body header {
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  background: #333;
+  color: #1E8184;
+}
+/* line 35, ../scss/base.scss */
+body header #site-title {
+  margin: 30px;
+}
+/* line 45, ../scss/base.scss */
+body header nav {
+  font-size: 14px;
+}
+/* line 47, ../scss/base.scss */
+body header nav ul {
+  text-align: left;
+  margin-bottom: 0;
+}
+/* line 50, ../scss/base.scss */
+body header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 53, ../scss/base.scss */
+body header nav ul li a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1E8184;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* line 74, ../scss/base.scss */
+body .centered-content {
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 75, ../scss/base.scss */
+body .centered-content .title {
+  font-size: 50px;
+}
+/* line 84, ../scss/base.scss */
+body footer {
+  padding-top: 10px;
+  border-top: 3px solid #1E8184;
+  text-align: center;
+  background: #333;
+  color: #999;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100px;
+}
+/* line 94, ../scss/base.scss */
+body footer a {
+  color: #1E8184;
+}

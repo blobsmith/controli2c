@@ -1,0 +1,9 @@
+preferred_syntax = :sass
+http_path = '/'
+css_dir = 'static/ledscontrol/css'
+sass_dir = 'static/ledscontrol/scss'
+images_dir = 'static/ledscontrol/img'
+javascripts_dir = 'static/ledscontrol/js'
+relative_assets = true
+line_comments = true
+# output_style = :compressed

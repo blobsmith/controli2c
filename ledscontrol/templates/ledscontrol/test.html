@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block js %}
+    <script src="{% static "ledscontrol/js/ledscontrol.js" %}"></script>
+    <script src="{% static "js/csrf.js" %}"></script>
+{% endblock %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "ledscontrol/css/ledscontrol.css" %}" />
+{% endblock %}
+
+
+{% block title %}Control Arduino with Raspberry Pi via I2C{% endblock %}
+
+{% block content %}
+    <div class="centered-content">
+        <p class="title lead">Switch leds from Raspberry pi to Arduino with I2C bus</p>
+        <div id="ledcontrol" class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary label-led {% ifequal leds.led1 1%}active{% endifequal %}" data-ref="1" >
+                            <input class="red-led" type="checkbox" autocomplete="off" > Led 1
+                        </label>
+
+                        <label class="btn btn-primary label-led {% ifequal leds.led2 1%}active{% endifequal %}" data-ref="2">
+                            <input class="red-led" type="checkbox" autocomplete="off"> Led 2
+                        </label>
+
+                        <label class="btn btn-primary label-led {% ifequal leds.led3 1%}active{% endifequal %}" data-ref="3">
+                            <input class="red-led" type="checkbox" autocomplete="off"> Led 3
+                        </label>
+
+                        <label class="btn btn-primary label-led {% ifequal leds.led4 1%}active{% endifequal %}" data-ref="4">
+                            <input class="red-led" type="checkbox" autocomplete="off"> Led 4
+                        </label>
+
+                        <label class="btn btn-primary label-led {% ifequal leds.led5 1%}active{% endifequal %}" data-ref="5">
+                            <input class="red-led" type="checkbox" autocomplete="off"> Led 5
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

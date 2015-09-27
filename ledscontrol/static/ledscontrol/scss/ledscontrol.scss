@@ -1,0 +1,12 @@
+#ledcontrol{
+    padding-top:40px;
+
+    label.label-led{
+        background-color: #333;
+        border-color: #999;
+        font-size: 20px;
+        &.active{
+            background-color: red;
+        }
+    }
+}

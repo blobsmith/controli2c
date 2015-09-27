@@ -1,0 +1,99 @@
+$dark-color: #333;
+$median-color: #999;
+$clear-color: #1E8184;
+$selected-color: white;
+
+.active{
+    background-color: $clear-color;
+    text-decoration:none;
+    border-bottom-color: $dark-color;
+    color: $selected-color;
+}
+.inverse-active{
+    color: $clear-color;
+    text-transform: lowercase;
+    border-bottom:2px solid white
+}
+
+.hover{
+    text-decoration:none;
+    color: $selected-color;
+    border-bottom-color: $selected-color;
+}
+
+a{
+    border-bottom: 1px solid transparent;
+}
+
+a:hover{
+    @extend .hover;
+}
+
+
+body{
+    header{
+        #site-title{
+            margin: 30px;
+        }
+        text-transform: uppercase;
+        padding: 0;
+        font-size: 30px;
+        text-align: center;
+        background: $dark-color;
+        color: $clear-color;
+
+        nav{
+            font-size: 14px;
+            ul{
+                text-align: left;
+                margin-bottom: 0;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    a{
+                      padding-right: 0;
+                      padding-left: 0;
+                      font-size: 16px;
+                      font-weight: bold;
+                      color: $clear-color;
+                      border-bottom: 3px solid transparent;
+                      position: relative;
+                      display: block;
+                      padding: 10px 15px;
+                      text-decoration: none;
+                    }
+
+                    a.active{
+                        @extend .active;
+                    }
+                }
+            }
+        }
+    }
+
+    .centered-content{
+        .title{
+            font-size: 50px;
+        }
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer{
+        padding-top: 10px;
+        border-top: 3px solid $clear-color;
+        text-align: center;
+        background: $dark-color;
+        color: $median-color;
+        bottom: 0;
+        position: absolute;
+        width:100%;
+        min-height: 100px;
+        a{
+            color: $clear-color;
+        }
+    }
+}
+

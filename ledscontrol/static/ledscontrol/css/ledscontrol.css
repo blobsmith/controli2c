@@ -1,0 +1,14 @@
+/* line 1, ../scss/ledscontrol.scss */
+#ledcontrol {
+  padding-top: 40px;
+}
+/* line 4, ../scss/ledscontrol.scss */
+#ledcontrol label.label-led {
+  background-color: #333;
+  border-color: #999;
+  font-size: 20px;
+}
+/* line 8, ../scss/ledscontrol.scss */
+#ledcontrol label.label-led.active {
+  background-color: red;
+}

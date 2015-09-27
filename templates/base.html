@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.ico" %}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static "library/bootstrap-3.3.5-dist/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    {% block css %}{% endblock %}
+    <title>{% block title %}Developath project interface{% endblock %}</title>
+</head>
+    <body>
+        <header >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="site-title">
+                            <h1>
+                                <span class="active">D</span><span class="inverse-active">evelopath</span>
+                            </h1>
+                        </div>
+
+                        <nav class="header-nav">
+                            <ul >
+                                <li>
+                                    {% url 'controli2c.views.view_home' as home_url%}
+                                    <a href="{% url 'controli2c.views.view_home' %}" {% if request.path == home_url  %} class="active"{% endif %} >HOME</a>
+                                </li>
+                                <li>
+                                    {% url 'ledscontrol.views.view_test' as testLeds_url %}
+                                    <a href="{% url 'ledscontrol.views.view_test' %}" {% if request.path == testLeds_url %} class="active"{% endif %} >I2C TEST</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        {% block contenttop %}{% endblock %}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            {% block content %}{% endblock %}
+        </div>
+
+        <footer >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>All developed for <a>&copy;Developath</a> by <a>@blobsmith</a></div>
+                        <div>Python web application with<a> Django</a> Framework</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{% static "library/jquery-1.11.3.min.js" %}"></script>
+        <script src="{% static "library/bootstrap-3.3.5-dist/js/bootstrap.min.js" %}"></script>
+        {% block js %}{% endblock %}
+    </body>
+</html>
