@@ -1,6 +1,6 @@
 /* line 6, ../scss/base.scss */
 .active, body header nav ul li a.active {
-  background-color: #1E8184;
+  background-color: #CB309F;
   text-decoration: none;
   border-bottom-color: #333;
   color: white;
@@ -8,7 +8,7 @@
 
 /* line 12, ../scss/base.scss */
 .inverse-active {
-  color: #1E8184;
+  color: #CB309F;
   text-transform: lowercase;
   border-bottom: 2px solid white;
 }
@@ -32,7 +32,7 @@ body header {
   font-size: 30px;
   text-align: center;
   background: #333;
-  color: #1E8184;
+  color: #CB309F;
 }
 /* line 35, ../scss/base.scss */
 body header #site-title {
@@ -58,7 +58,7 @@ body header nav ul li a {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #1E8184;
+  color: #CB309F;
   border-bottom: 3px solid transparent;
   position: relative;
   display: block;
@@ -78,8 +78,8 @@ body .centered-content .title {
 }
 /* line 84, ../scss/base.scss */
 body footer {
-  padding-top: 10px;
-  border-top: 3px solid #1E8184;
+  padding-top: 20px;
+  border-top: 6px solid #CB309F;
   text-align: center;
   background: #333;
   color: #999;
@@ -90,5 +90,5 @@ body footer {
 }
 /* line 94, ../scss/base.scss */
 body footer a {
-  color: #1E8184;
+  color: #CB309F;
 }

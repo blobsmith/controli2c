@@ -1,6 +1,6 @@
 $dark-color: #333;
 $median-color: #999;
-$clear-color: #1E8184;
+$clear-color: #CB309F;
 $selected-color: white;
 
 .active{
@@ -82,8 +82,8 @@ body{
     }
 
     footer{
-        padding-top: 10px;
-        border-top: 3px solid $clear-color;
+        padding-top: 20px;
+        border-top: 6px solid $clear-color;
         text-align: center;
         background: $dark-color;
         color: $median-color;

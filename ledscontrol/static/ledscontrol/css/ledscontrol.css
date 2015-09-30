@@ -10,5 +10,5 @@
 }
 /* line 8, ../scss/ledscontrol.scss */
 #ledcontrol label.label-led.active {
-  background-color: red;
+  background-color: #ED1313;
 }

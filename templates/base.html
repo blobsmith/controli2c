@@ -32,6 +32,9 @@
                                     {% url 'ledscontrol.views.view_test' as testLeds_url %}
                                     <a href="{% url 'ledscontrol.views.view_test' %}" {% if request.path == testLeds_url %} class="active"{% endif %} >I2C TEST</a>
                                 </li>
+                                <li>
+                                    <a href="/admin/" >Login</a>
+                                </li>
                             </ul>
                         </nav>
 
